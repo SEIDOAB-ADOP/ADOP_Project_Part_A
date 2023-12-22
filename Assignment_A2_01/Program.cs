@@ -7,8 +7,9 @@ namespace Assignment_A2_01
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+            NewsApiData news = await new NewsService().GetNewsAsync();
         }
     }
 }
